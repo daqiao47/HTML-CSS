@@ -1,0 +1,409 @@
+一、拨开云雾见天日 守得云开见日明
+    1、什么是html、css？
+        做网站的编程语言
+        如何去写代码？写到哪里？
+        作业：什么是html、什么是css？
+
+    2、VScode编辑器？
+        2.1下载的插件
+            语言包Chinese
+            open in browser   
+            view in browser
+        2.2快捷键
+            创建文件、文件夹、重命名
+            ctrl + s 保存
+            ctrl + a 全选
+            ctrl + x、+ c、+ v 剪切、复制、粘贴
+            ctrl + y、+ z 前进、撤销
+            shift + end、+ home：向后、向前
+            shift + alt + ↓ 快速复制一行
+            alt + ↑、+ ↓ 快速移动一行
+            shift + tab 向前缩进2格
+            tab 向后缩进2格
+            多光标：alt + 鼠标左键
+            ctrl + d 选择相同元素的下一个
+        2.3设置：文件下的首选项
+            控制文字长度 word wrap
+            搜索框：搜索文件夹中文件内的指定内容
+
+    3、浏览器
+        3.1 Chrome浏览器
+
+        作业：了解5大浏览器
+
+    4、深入了解网站开发
+        UI设计师：设计稿 
+        web前端开发工程师（H5开发）
+            设计稿→代码
+            数据库里的数据 -> 显示到页面
+            HTML + CSS
+                HTML：结构（砖瓦）
+                CSS：样式（装修）
+                JavaScript：行为（交互行为）
+        web后端工程师
+
+        作业：了解JavaScript，与html、css之间的关系
+
+    5、web三大核心技术
+        html
+        CSS
+        JavaScript
+
+    6、HTML基础结构与属性
+        HTML ：超文本　标记　语言
+            超文本 ：文本内容和非文本内容（图片、视频、音频等）
+            标记 ：<单词>
+            语言 ：编程语言
+        标记也叫标签：
+            <header>
+            <footer>
+        写法分为两种：
+
+            单标签 <header>
+            双标签<header></header>
+
+        创建标签的快捷键：单词 + tab
+
+            标签可以上下排列，也可以组合嵌套
+            html标签含义之元素周期表（常见标签）
+        标签的属性 ：来修饰标签二点，设置当前标签的一些功能。
+            <标签 属性=“值” 属性2=“值”>
+
+    7、HTML的初始代码
+        每个.html文件都有的代码叫初始代码，要符合html文件的规范写法
+        快捷键 ：！ + tab    快速创建初始代码
+
+        <!DOCTYPE html>                      文档声明：告诉浏览器这是一个html文件
+        <html lang="en">                     html文件最外层标签：包裹着所有的html标签代码            lang = “en” 表示是一个英文网页  zh—CN 中文网站
+            <head>                           头部区域
+                <meta charset="UTF-8">       元信息：是编写网页中的辅助信息   charset="UTF-8"国际编码，让网页不出现乱码的情况
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>      设置网页的标题
+            </head>                    
+            <body>                           
+                                              显示网页内容的区域
+            </body>
+            </html>
+            练习：手写初始代码
+
+    8、HTML注释
+        HTMl注释：注释的代码，只有在文件中看得到，但是浏览器中显示不出来
+        写法 ：
+            <!-- 注释的内容 -->
+        快捷添加注释与删除注释：
+            1、ctrl + /
+            2、shift + alt + a
+        意义：
+            1、把暂时不用的代码注释起来，方便以后使用
+            2、提示当前代码的意思
+
+    9、HTML语义化
+        所谓HTML语义化指的是，根据网页中内容的结构，选择适合的HTML标签进行编写
+        好处：
+        1、在没有CSS的情况下，页面也能呈现很好的内容结构。
+        2、有利于SEO，让搜索引擎爬虫更好的理解网页。
+        3、方便其他设备解析（如屏幕阅读器、盲人阅读器等）。
+            h5o，屏幕阅读器
+
+        4、方便团队开发与维护。
+
+
+    10、标题与段落
+        标题  title      双标签：<h1></h1>
+
+        在一个网页中，h1标题最重要，并且一个.html文件中只能出现一次h1标签，h2可以出现多次
+
+        h5、h6标签在网页中不经常使用，常用h2~h4
+
+        段落  paragraph   双标签： <p></p>
+
+        练习：带有标签和段落的个人简介
+
+
+    11、文本修饰标签
+        强调 :双标签
+            加粗：<strong></strong>
+            倾斜：<em></em>
+                区别：
+                1、写法和展示效果，一个加粗，一个倾斜
+                2、strong强调性更强，em的强调性稍弱
+
+            下标：<sub></sub>
+            上标：<sup></sup>
+            删除文本：<del>
+            插入文本：<ins>
+            注：一般情况下，删除和插入是配合使用的。
+        
+        练习：编辑文本
+
+    12、图片标签与图片属性
+        图片：<img>
+        img：单标签
+            src：引入图片的地址。
+            alt：当图片出现问题的时候，可以显示一段友好的提示文字。
+            title：提示信息
+            width：图片大小
+            height：图片大小
+
+            <img src="图片地址" alt="友好文字"title="提示信息"width="长"heigh="宽">
+
+        练习；文本中带有图片
+
+    13、引入文件的地址路径
+        相对路径
+          "."  :在路径中表示当前路径
+          ".." :在路径中表示上一级路径
+
+        绝对路径
+           "文件的路径" 
+
+           注：1、尽量用相对路径，这样可以移植给他人
+               2、用斜线，不用反斜线
+
+    14、链接标签
+    标签：
+       双标签： <a></a>
+            href属性：链接的地址
+            target属性：可以打开改变链接打开的方式，默认情况下，在当前页面打开 : "_self"  ;  新窗口打开 : "_blank"
+
+            单标签
+            base ，改变链接的默认行为的。
+          
+         练习： 
+            分别建立一个首页、列表页、详情页
+            实现相互跳转
+            每一页包含一张图片
+            图片在images文件夹内
+            列表和详情页在html文件夹内，首页在根目录下
+
+    15、跳转锚点
+        实现一
+            #号
+            id属性
+        
+        实现二
+            #号
+            name属性
+
+    16、特殊符号
+        特殊符号，用专用代码。
+            空格   &nbsp
+            © 版权 &copy
+            ® 注册商标 &reg
+            < 小于号 &lt
+            > 大于号 &gt
+            & 和号 &amp
+            ￥ 人民币 &yen
+            ℃ 摄氏度 &deg
+    17、列表标签
+    
+        1、无序列表
+            <ul>、<li>:   符合嵌套的规范
+            Ul是最外层容器
+            li是标签
+            type属性   https://www.w3school.com.cn/tags/att_ul_type.asp 一般用CSS去控制
+                disc 默认值（实心圆）
+                circle 空心圆
+                square 实心方块
+        2、有序列表
+        <ol>\<li> :嵌套规范
+        默认前面加序号1、2、3···
+            type属性   https://www.w3school.com.cn/tags/att_ol_type.asp 一般用CSS去控制
+        3、定义列表
+        <dl>
+            <dt>定义专业术语
+            <dd>专业名词进行解释和描述
+            <dt>html</dt>     定义名词
+                <dd>超文本语言</dd>    解释名词
+            <dt>CSS</dt>
+                <dd>层叠样式</dd>
+        4、嵌套列表
+            多层级列表
+            <ul>
+                <li>
+                    湖北省
+                    <ul>
+                        <li>黄冈</li>
+                        <li>黄石</li>
+                        <li>武汉</li>
+                    </ul>
+                </li>
+                <li>
+                    湖南省
+                    <ul>
+                        <li>长沙</li>
+                        <li>张家界</li>
+                        <li>岳阳</li>
+                    </ul>
+                </li>
+                <li>
+                    四川省
+                    <ul>
+                        <li>阿坝</li>
+                        <li>成都</li>
+                        <li>绵阳</li>
+                    </ul>
+                </li>
+            </ul>
+    18、表格标签
+        <table>:表格最外面的容器
+        <tr>:定义表格行
+        <th>:定义表头
+        <td>:定义表格单元格
+        <caption>：定义表格标题
+            注：之间有嵌套规范
+          语义化标签  <tHead>、<tBody>、<tFood>
+          注：一个表格中<tBody>可以出现多次，<tHead>、<tFood>只能出现一次
+    19、表格属性
+        border ：表格边框
+        cellpadding：单元格内的空间
+        cellspacing：单元格之间的空间
+        rowspan：合并行
+        colspan：合并列
+        align：左右对齐   left、center、right
+        valign：上下对齐 top、middle、bottom
+    
+    20、表单标签
+    <form>:表单的最外层容器
+    <input> 输入不同的值，展示不同的控件
+            type               含义
+            text         普通的文本输入框
+            password        密码输入框
+            checkbox          复选框
+            radio             单选框
+            file             上传文件
+            submit           提交按钮
+            reset            重置按钮
+    <testarea>:多行文本框
+    <selcet>、<option>、
+    <lable>辅助表单
+
+    21、表格、表单组合
+
+
+    22、div和span
+        div（块） 全称为division   划分区域
+        span（内联） 修饰文字
+
+    23、CSS基础语法
+        格式：
+            选择器（属性1：值1；属性2：值2）
+                长度单位：
+                    1、px 像素 pixel 、
+                    2、%  百分比   外容器->600px 当前容器50% -> 300px  百分比取决于外容器的大小，相对值 px是绝对值
+            background-color
+            基本样式
+            width 宽度
+            height 高
+            background-color 背景色
+            CSS注释
+            /*注释*/  shift+alt+a  ctrl+/
+    24、内联样式与内部样式
+        
+        1、内联样式（行内、行间）样式
+            html标签上添加style属性来实现的
+
+        2、内部样式
+            在<style>标签内添加的样式
+                注：内部样式的优点，可以复用代码
+        区别：
+            内部样式代码可以复用，管整个区域，内联样式管一行
+        3、外部样式
+            引入一个单独的CSS文件，name.CSS
+                <link>标签
+                    属性1  rel 引入资源类型
+                    属性2  href 引入外部资源的地址
+                @import 方式引入外部样式，不建议使用
+    
+    25、CSS中的颜色表示方法
+
+        1、单词表示法 ：red blue yellow 。。。
+
+        2、十六进制表示法 ：1、2、3、4、5、6、7、8、9、ab\c\d\e\f
+         #000000   黑色     #fffffff 白色
+
+       3、 RGB三元色表示法  红绿蓝   rgb（255，255，255）
+         取值范围（0，255）
+         获取网页中的颜色  工具：插件/PS
+    
+    26、背景样式
+        1、background-color：背景颜色
+        2、background-image：背景图片   
+            url(背景地址)
+            默认会水平垂直满铺
+
+        3、background-repeat：背景图片的平铺方式
+            repeat-X
+            repeat-y
+            repeat(x,y)
+            no-repeat
+
+        4、background-position：背景图片的位置
+            x y
+            x :left,center,right
+            y :top,center,bottom
+
+        5、background-attachment:背景图随滚动条的移动方式
+            scroll:默认值 背景位置按照当前元素进行偏移
+            fixed：固定   背景位置是按浏览器大小进行固定，可能会超出容器内
+
+    27、视觉差
+
+    28、CSS边框的样式
+        border-style: 边框样式
+            solid：实线
+            dashed：虚线
+            dotted：点线
+            边框也可以针对某一条边单独设置，border-right/left/top/bottom-style,中间是方向，每次只能选择一条边
+
+        border-width：边框大小
+
+        border-color：边框颜色
+        颜色：透明颜色transparent
+
+        29、css文字样式
+            font-family：字体类型
+                英文、中文
+                样式：times new roman 宋体、、、
+                中文可用于英文字符
+                英文不能用于中文字符
+                衬线体和非衬线体
+                    注：设置多字体的方式 字体中间加逗号
+                        引号的问题 必须加引号，字体样式中有空格，"times new roman"中间有空格，需单独引用
+            
+            font-size:字体大小
+                默认16px
+                small、large
+                注：一般字体大小设置为偶数
+
+            font-weight：字体粗细
+                正常(normal)、加粗(bold)
+                数值100~900,100~500是正常，600~900是加粗，正常100，粗600
+            
+            font-style:字体样式
+                正常/斜体 normal/italic
+                注：oblique也表示斜体
+                    italic带有倾斜的字体才能倾斜
+                    oblique所有字体都能被倾斜
+
+        30、CSS段落样式
+            text-decoration：文本装饰        
+                下划线；underline;
+                删除线:overline;
+                上划线；line-through
+                不添加任何装饰：none
+
+            text-transform：文本大小写（针对英文文本）
+                小写:lowercase
+                大写:uppercase
+                首字母大写：capitize
+
+            text-inden:文本缩进
+                font-size默认16px大小，缩进32px
+                em：相对单位，1em都是跟字体大小相同，eg，字体16px，则1em=16px，若字体18px，1em=18px；
+                中英文混合就无法对齐
+
+            test-align：文本对齐方式
+                对齐方式：left\right\center\juetify(分散对齐)
+
